@@ -1,0 +1,6 @@
+<% unless @story_items.empty? %> 
+	<div>
+		<%= render :partial => 'shared/story_item', :collection => @story_items %> 
+	</div>
+	<%#= will_paginate @feed_items %>
+<% end %>

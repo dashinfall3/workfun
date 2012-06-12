@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Story:</b>
+  <%= @story.story %>
+</p>
+
+<p>
+  <b>Type:</b>
+  <%= @story.genre %>
+</p>
+
+<%= link_to 'Edit', edit_story_path(@story) %> |
+<%= link_to 'Back', stories_path %>

@@ -1,0 +1,11 @@
+<% if worker_signed_in? %>
+  <h1>Work stories...they are classic. Post em here</h1>
+  <p></p>
+  <%= render 'shared/story_form' %> 
+  <%= render 'shared/feed' %>
+<% else %>
+  <h1>Because work sucks so much it is funny</h1><br>
+  <%= render 'shared/feed' %>
+<% end %>
+
+

@@ -1,4 +1,12 @@
 Workfun::Application.routes.draw do
+  resources :stories
+
+  devise_for :workers
+  resources :workers
+  
+  root :to => "pages#home"
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
